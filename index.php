@@ -18,5 +18,17 @@
         echo "ID".$item['id']." Nome: ".$item['nome'] ."<br>";
     }
 ?>
+    <form method="post">
+    <label>Nome</label>
+    <input text="text" name="nome" />
+
+    <label>Telefone</label>
+    <input text="text" name="telefone" />
+
+    <label>CPF</label>
+    <input text="text" name="cpf" />
+
+    <input type="submit" value="Salvar" />
+</form>
 </body>
 </html>
