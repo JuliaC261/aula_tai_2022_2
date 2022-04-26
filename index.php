@@ -10,25 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-    $objBD = new BD();
-    $objBD->conn();
-    $result = $objBD->select();
-    foreach ($result as $item){
-        echo "ID".$item['id']." Nome: ".$item['nome'] ."<br>";
-    }
-?>
-    <form method="post">
-    <label>Nome</label>
-    <input text="text" name="nome" />
+<h2>CRUD usuário</h2>
+<a href="./pagina/usuarioLIst.php">Ver</a>
 
-    <label>Telefone</label>
-    <input text="text" name="telefone" />
-
-    <label>CPF</label>
-    <input text="text" name="cpf" />
-
-    <input type="submit" value="Salvar" />
-</form>
 </body>
 </html>
